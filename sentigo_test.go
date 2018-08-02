@@ -5,7 +5,7 @@ import (
 )
 
 func TestPositive(t *testing.T) {
-	actual := score("This movie is good")
+	actual := Score("This movie is good")
 	if actual <= 0 {
 		t.Fatalf("Failed")
 	}
@@ -13,7 +13,7 @@ func TestPositive(t *testing.T) {
 }
 
 func TestNegative(t *testing.T) {
-	actual := score("This movie is bad")
+	actual := Score("This movie is bad")
 	if actual >= 0 {
 		t.Fatalf("Failed")
 	}
