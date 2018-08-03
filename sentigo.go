@@ -1,6 +1,6 @@
 package sentigo
 
-//Score will return the Sentiment Score 
+//Score will return the Sentiment Score
 func Score(text string) int {
 	tokens := tokenize(text)
 	sum := 0
